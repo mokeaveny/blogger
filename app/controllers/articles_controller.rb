@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
 		@article.save
 
 		flash.notice = "Article '#{@article.title}' Created!"
-		redirect_to article_(@article)
+		redirect_to @article
 	end
 
 	def destroy
